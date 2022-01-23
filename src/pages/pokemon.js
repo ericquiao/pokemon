@@ -289,7 +289,7 @@ export const Pokemon = () => {
     <div className='flex flex-col gap-3 p-3'>
       {choices.map((choice) => (
         <PokemonItem 
-          id = {choice.id}
+          key = {choice.id}
           name = {choice.name.english}
           type = {choice.type}
           base = {choice.base}
